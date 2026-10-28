@@ -1,4 +1,4 @@
-export default function demoPage(){
+export default function DemoPage(){
 
     return(
         <>

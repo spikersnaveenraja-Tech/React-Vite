@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function expression() {
+export default function Expression() {
 
     const [isApple, setIsApple] = useState(true)
     const [isOrange, setIsOrange] = useState(true)
@@ -9,8 +9,8 @@ export default function expression() {
 
     return(
         <>
-        <div className={"h2 text-center text-primary"}>D-MART</div>
-          <div className={"container"}>
+        <div className="h2 text-center text-primary">D-MART</div>
+          <div className="container">
             <div className = {isApple ? "d-block" : "d-none"}>
                 <div> Fruit Name : Apple </div>
                     <div> Fruit price : 50 </div>
