@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 
-import CountCalculator from './Functional_Components/CountCalculator.jsx'
+import Calculator from './Class_Components/Calculator.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CountCalculator />
+    <Calculator />
   </StrictMode>,
 )
