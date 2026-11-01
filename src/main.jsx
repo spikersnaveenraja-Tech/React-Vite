@@ -11,8 +11,7 @@ function App(){
 
    return(
       <div>
-       {(show) &&
-         (<C_unmountiongPhase/>)}
+       {(show) && (<C_unmountiongPhase/>)}
        
         
         <button onClick = { () => setShow(false)}>Hide</button>
