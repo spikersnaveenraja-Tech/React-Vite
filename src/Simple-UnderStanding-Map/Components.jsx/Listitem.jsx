@@ -2,20 +2,19 @@ import { useState } from "react";
 
 
 export default function ListItem({
-   fruits,
-   setFruits
+    fruits,
+    setFruits,
+    setError
 }) {
 
-    console.log(fruits);
-console.log(typeof fruits);
     const [showForm, setShowForm] = useState(false);
     const [editIndex, setEditIndex] = useState(null);
     const [newUpdatedFruit, setNewUpdatedFruit] = useState('');
 
-     const handleDelete = (ind) => {
-        const newFruits =  fruits.filter(
-            (value,index) => {
-                return  index != ind
+    const handleDelete = (ind) => {
+        const newFruits = fruits.filter(
+            (value, index) => {
+                return index != ind
             }
         )
 
@@ -23,6 +22,7 @@ console.log(typeof fruits);
     }
 
     const handleUpdate = (index) => {
+         setError(null)
         setEditIndex(index);
         setNewUpdatedFruit(fruits[index]);
         setShowForm(true);
@@ -38,6 +38,7 @@ console.log(typeof fruits);
         setShowForm(false);
         setEditIndex(null);
         setNewUpdatedFruit('');
+        setError(null)
     };
 
     return (
@@ -89,24 +90,24 @@ console.log(typeof fruits);
                                                 fruits.map(
                                                     (values, ind) => {
                                                         return (
-                                                        <tr key={ind}>
-                                                            <td>{ind + 1}</td>
-                                                            <td>{values}</td>
-                                                            <td>
-                                                                <button className="btn btn-success" onClick={() => handleUpdate(ind)}>Update</button>
-                                                            </td>
-                                                            <td>
-                                                                <button className="btn btn-danger" onClick={() => handleDelete(ind)}>Delete</button>
-                                                            </td>
-                                                        </tr>)
+                                                            <tr key={ind}>
+                                                                <td>{ind + 1}</td>
+                                                                <td>{values}</td>
+                                                                <td>
+                                                                    <button className="btn btn-success" onClick={() => handleUpdate(ind)}>Update</button>
+                                                                </td>
+                                                                <td>
+                                                                    <button className="btn btn-danger" onClick={() => handleDelete(ind)}>Delete</button>
+                                                                </td>
+                                                            </tr>)
 
                                                     }
                                                 )
                                             ) :
                                             (
-                                            <tr>
-                                                <td colSpan={4}>No records Found</td>
-                                            </tr>
+                                                <tr>
+                                                    <td colSpan={4}>No records Found</td>
+                                                </tr>
                                             )
 
                                     }
