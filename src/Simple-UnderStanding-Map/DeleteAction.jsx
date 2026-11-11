@@ -1,4 +1,7 @@
 import { useState } from "react"
+import ListItem from "./Components.jsx/Listitem"
+import AddFruit from "./Components.jsx/AddFruit"
+
 
 export default function DeleteAction(){
 
@@ -7,18 +10,17 @@ export default function DeleteAction(){
     const[error,setError] = useState(null)
 
     const handleChange = (eve)=>{
-         debugger;
+        
          if(eve.target.value != null)
            setNewFruit(eve.target.value)
     }
 
     const addFruit = () => {
-        debugger;
-        console.log('newFruit',newFruit)
-
+          debugger;
         if(newFruit === null ||  newFruit.trim().length === 0){
             setError("Please enter the fruit ")
         }
+
        else{
        const isAvailable = fruits.find(val => val === newFruit)
 
@@ -27,6 +29,8 @@ export default function DeleteAction(){
             setFruits(
             [...fruits,newFruit]
          )
+         document.getElementById('inp-txt').value=''
+         setNewFruit(null)
         }
         else{
           setError("This Fruit is already Available the list ")
@@ -34,16 +38,7 @@ export default function DeleteAction(){
         }
     }
 
-    const handleDelete = (ind) => {
-        const newFruits =  fruits.filter(
-            (value,index) => {
-                return  index != ind
-            }
-        )
-
-        setFruits(newFruits)
-    }
-
+   
     return (
         <>
          <div className="container">
@@ -53,47 +48,17 @@ export default function DeleteAction(){
                 error ? <div className="alert alert-danger">{error}</div> : <div></div>
             }
 
-            <table className="table">
-                <thead>
-                    <tr>
-                     <th>S.No</th>
-                     <th>Fruits</th>
-                     <th colSpan={2}>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        fruits && fruits.length != 0 ?
-                        (
-                          fruits.map(
-                          (values,ind) => {
-                           return <tr key = {ind}>
-                                <td>{ind+1}</td>
-                                <td>{values}</td>
-                                 <td>
-                                    <button className="btn btn-success" onClick={()=>handleUpdate(ind)}>Update</button>
-                                </td>
-                                <td>
-                                    <button className="btn btn-danger" onClick={()=>handleDelete(ind)}>Delete</button>
-                                </td>
-                            </tr>
+            <ListItem
+               fruits ={fruits}
+            setFruits={setFruits}
+            
+            />
+           
+            <AddFruit 
+               handleChange = {handleChange}
+               addFruit ={addFruit}
+             />
 
-                         }
-                         )
-                        ) :
-                        (<tr>
-                            <td colSpan={3}>No records Found</td>
-                        </tr>)
-                        
-                    }
-                </tbody>
-            </table>
-
-            <div className="mt-3">
-                <label htmlFor='' className="form-label">Add New Fruit :</label>
-                <input className='ms-1' type = 'text' name= 'newFruit' onChange={handleChange}/>
-                <button className="btn btn-info ms-2" onClick={addFruit}>Add New Fruit</button>
-            </div>
          </div>
         </>
     )
