@@ -22,7 +22,7 @@ export default function ListItem({
     }
 
     const handleUpdate = (index) => {
-         setError(null)
+        setError(null)
         setEditIndex(index);
         setNewUpdatedFruit(fruits[index]);
         setShowForm(true);

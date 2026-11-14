@@ -7,14 +7,11 @@ export default function LoopWithAction(){
     const[error,setError] = useState(null)
 
     const handleChange = (eve)=>{
-         debugger;
          if(eve.target.value != null)
            setNewFruit(eve.target.value)
     }
 
     const addFruit = () => {
-        debugger;
-        console.log('newFruit',newFruit)
 
         if(newFruit === null ||  newFruit.trim().length === 0){
             setError("Please enter the fruit ")
