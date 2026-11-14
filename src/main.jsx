@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 
-import  FruitMainpage from './ListManagement/FruitMainpage.jsx'
+import  JsonImport from './FromJson/JsonImport.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <FruitMainpage />
+    <JsonImport />
   </StrictMode>,
 )
