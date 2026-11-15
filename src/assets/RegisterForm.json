@@ -1,0 +1,52 @@
+[
+    {
+      "fieldLabel":"Enter Candidate Name",
+      "fieldType":"text",
+      "fieldName":"candidateName",
+      "fieldClassName":"form-control",
+      "fieldId":"candidateName",
+      "fieldPlaceHolder":"",
+      "fieldVisible":true,
+      "fieldValue":""
+    },
+    {
+        "fieldLabel":"Enter Candidate Age",
+        "fieldType" :"text",
+        "fieldName" : "candidateAge",
+        "fieldClassName":"form-control",
+        "fieldId" : "candidateAge",
+        "fieldPlaceHolder":"",
+        "fieldVisible":true,
+        "fieldValue" : ""
+     },
+     {
+        "fieldLabel":"Enter Candidate Email",
+        "fieldType" :"email",
+        "fieldName" : "candidateEmail",
+        "fieldClassName":"form-control",
+        "fieldId" : "candidateEmail",
+        "fieldPlaceHolder":"",
+        "fieldVisible":true,
+        "fieldValue" : ""
+     },
+      {
+        "fieldLabel":"Enter Candidate Password",
+        "fieldType" :"password",
+        "fieldName" : "candidatePassword",
+        "fieldClassName":"form-control",
+        "fieldId" : "candidatePassword",
+        "fieldPlaceHolder":"",
+        "fieldVisible":true,
+        "fieldValue" : ""
+     },
+      {
+        "fieldLabel":"",
+        "fieldType" : "submit",
+        "fieldName" : "Register",
+        "fieldClassName":"btn btn-primary mt-3",
+        "fieldID":"",
+        "fieldPlaceholder":"",
+        "fieldVisible":true,
+         "fieldValue":""
+    }
+]
