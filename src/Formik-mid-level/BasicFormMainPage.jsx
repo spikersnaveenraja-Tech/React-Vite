@@ -11,7 +11,7 @@ export default function BasicFormMainPage(){
               candidateName : "",
               candidateAge:"",
               candidateEmail:"",
-              canididatePassword:"",
+              candidatePassword:"",
             }
            }
            onSubmit={(values)=>{

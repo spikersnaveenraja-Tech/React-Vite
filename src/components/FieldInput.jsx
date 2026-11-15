@@ -1,7 +1,8 @@
 import { Formik,Form,Field } from "formik"
 
 export default function FieldInput(
-      {
+     {
+       header: {
         fieldLabel,
         fieldType,
         fieldName,
@@ -11,6 +12,8 @@ export default function FieldInput(
         fieldVisible,
         fieldValue
     }
+}
+     
 ) 
 
 
