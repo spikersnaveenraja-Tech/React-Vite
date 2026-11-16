@@ -39,6 +39,48 @@
         "fieldVisible":true,
         "fieldValue" : ""
      },
+     {
+        "fieldLabel":"Gender",
+        "fieldType" : "radio",
+        "fieldName" : "gender",
+        "fieldClassName":"form-label ms-3",
+        "fieldId":"male",
+        "fieldPlaceholder":"",
+        "fieldVisible":true,
+        "fieldValue":"male",
+        "fieldChildren":[
+            {"fieldInputClassName":"form-check-input","checkboxLabel":"Male","checkboxValue":"male"},
+            {"fieldInputClassName":"form-check-input","checkboxLabel":"Female","checkboxValue":"female"}
+        ]
+    },  
+     {
+        "fieldLabel":"Address",
+        "fieldType" : "textarea",
+        "fieldName" : "address",
+        "fieldClassName":"form-control",
+        "fieldID":"address",
+        "fieldPlaceHolder":"Max word 120",
+        "fieldVisible":true,
+        "fieldValue":"",
+        "fieldRows": 2,
+        "fieldCols":2
+    },
+    {
+        "fieldLabel":"Country",
+        "fieldType" : "select",
+        "fieldName" : "country",
+        "fieldClassName":"form-control",
+        "fieldID":"country",
+        "fieldPlaceHolder":"Max word 120",
+        "fieldVisible":true,
+        "fieldOption" : [
+            "Please Select Your country",
+            "India",
+            "China",
+            "Saudi",
+            "Singapore"
+        ]
+    },
       {
         "fieldLabel":"",
         "fieldType" : "submit",
