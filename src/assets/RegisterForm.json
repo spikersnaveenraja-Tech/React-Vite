@@ -44,10 +44,10 @@
         "fieldType" : "radio",
         "fieldName" : "gender",
         "fieldClassName":"form-label ms-3",
-        "fieldId":"male",
+        "fieldId":"",
         "fieldPlaceholder":"",
         "fieldVisible":true,
-        "fieldValue":"male",
+        "fieldValue":"",
         "fieldChildren":[
             {"fieldInputClassName":"form-check-input","checkboxLabel":"Male","checkboxValue":"male"},
             {"fieldInputClassName":"form-check-input","checkboxLabel":"Female","checkboxValue":"female"}

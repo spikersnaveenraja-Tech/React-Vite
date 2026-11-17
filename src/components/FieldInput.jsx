@@ -1,4 +1,5 @@
-import { Formik, Form, Field } from "formik"
+import { Formik, Form, Field, ErrorMessage } from "formik"
+
 
 export default function FieldInput(
     {
@@ -45,6 +46,11 @@ export default function FieldInput(
                                     <option value="">No Item Found</option>
                                 )}
                             </Field>
+                            <ErrorMessage 
+                                name={fieldName} 
+                                component={"div"} 
+                                className="text-danger" 
+                            />
                         </>
                     ) : (
                         <>
@@ -73,8 +79,13 @@ export default function FieldInput(
                                         placeholder={fieldPlaceHolder}
                                         {...(fieldType === "textarea" ? { as: "textarea", rows: fieldRows, cols: fieldCols } : { type: fieldType })}
                                     />
-
+                                    
                                 )}
+                                 <ErrorMessage 
+                                name={fieldName} 
+                                component={"div"} 
+                                className="text-danger" 
+                            />
                        </>
                     )}
                 </div>
