@@ -6,7 +6,7 @@ export default function BasicForm(){
 
     return(
         <>
-         <div className="conntainer">
+         <div className="container">
             <div className="h2 text-center text-primary">BASIC FORM</div>
             <Form>
                 {

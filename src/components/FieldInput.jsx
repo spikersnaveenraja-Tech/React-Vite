@@ -20,23 +20,12 @@ export default function FieldInput(
     }
 
 ) {
-    console.log(fieldOption)
+
     return (
         <>
             {fieldVisible && (
                 <div>
                     <label className="form-label" htmlFor={fieldId}>{fieldLabel}</label>
-
-                    {/* <Field
-                    id={fieldId}
-                    name={fieldName}
-                    className={fieldClassName}
-                    placeholder={fieldPlaceHolder}
-                    // type={fieldType !== "textarea" ? fieldType : undefined}
-                    // as={fieldType?.toLowerCase() === "textarea" ? "textarea" : undefined}
-                    // {...(fieldType === "textarea" ? { as: "textarea", rows: fieldRows, cols: fieldCols } : { type: fieldType })}
-
-                </Field>  */}
 
                     {fieldType === "select" ? (
                         <>
