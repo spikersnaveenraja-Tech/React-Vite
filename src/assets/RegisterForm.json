@@ -1,94 +1,124 @@
 [
-    {
-      "fieldLabel":"Enter Candidate Name",
-      "fieldType":"text",
-      "fieldName":"candidateName",
-      "fieldClassName":"form-control",
-      "fieldId":"candidateName",
-      "fieldPlaceHolder":"",
-      "fieldVisible":true,
-      "fieldValue":""
-    },
-    {
-        "fieldLabel":"Enter Candidate Age",
-        "fieldType" :"text",
-        "fieldName" : "candidateAge",
-        "fieldClassName":"form-control",
-        "fieldId" : "candidateAge",
-        "fieldPlaceHolder":"",
-        "fieldVisible":true,
-        "fieldValue" : ""
-     },
-     {
-        "fieldLabel":"Enter Candidate Email",
-        "fieldType" :"email",
-        "fieldName" : "candidateEmail",
-        "fieldClassName":"form-control",
-        "fieldId" : "candidateEmail",
-        "fieldPlaceHolder":"",
-        "fieldVisible":true,
-        "fieldValue" : ""
-     },
+  {
+    "fieldLabel": "Enter Candidate Name",
+    "fieldType": "text",
+    "fieldName": "candidateName",
+    "fieldClassName": "form-control",
+    "fieldId": "candidateName",
+    "fieldPlaceHolder": "",
+    "fieldVisible": true,
+    "fieldValue": ""
+  },
+  {
+    "fieldLabel": "Enter Candidate Age",
+    "fieldType": "text",
+    "fieldName": "candidateAge",
+    "fieldClassName": "form-control",
+    "fieldId": "candidateAge",
+    "fieldPlaceHolder": "",
+    "fieldVisible": true,
+    "fieldValue": ""
+  },
+  {
+    "fieldLabel": "Enter Candidate Email",
+    "fieldType": "email",
+    "fieldName": "candidateEmail",
+    "fieldClassName": "form-control",
+    "fieldId": "candidateEmail",
+    "fieldPlaceHolder": "",
+    "fieldVisible": true,
+    "fieldValue": ""
+  },
+  {
+    "fieldLabel": "Enter Candidate Password",
+    "fieldType": "password",
+    "fieldName": "candidatePassword",
+    "fieldClassName": "form-control",
+    "fieldId": "candidatePassword",
+    "fieldPlaceHolder": "",
+    "fieldVisible": true,
+    "fieldValue": ""
+  },
+  {
+    "fieldLabel": "Gender",
+    "fieldType": "radio",
+    "fieldName": "gender",
+    "fieldClassName": "form-label ms-3",
+    "fieldId": "",
+    "fieldPlaceholder": "",
+    "fieldVisible": true,
+    "fieldValue": "",
+    "fieldChildren": [
       {
-        "fieldLabel":"Enter Candidate Password",
-        "fieldType" :"password",
-        "fieldName" : "candidatePassword",
-        "fieldClassName":"form-control",
-        "fieldId" : "candidatePassword",
-        "fieldPlaceHolder":"",
-        "fieldVisible":true,
-        "fieldValue" : ""
-     },
-     {
-        "fieldLabel":"Gender",
-        "fieldType" : "radio",
-        "fieldName" : "gender",
-        "fieldClassName":"form-label ms-3",
-        "fieldId":"",
-        "fieldPlaceholder":"",
-        "fieldVisible":true,
-        "fieldValue":"",
-        "fieldChildren":[
-            {"fieldInputClassName":"form-check-input","checkboxLabel":"Male","checkboxValue":"male"},
-            {"fieldInputClassName":"form-check-input","checkboxLabel":"Female","checkboxValue":"female"}
-        ]
-    },  
-     {
-        "fieldLabel":"Address",
-        "fieldType" : "textarea",
-        "fieldName" : "address",
-        "fieldClassName":"form-control",
-        "fieldID":"address",
-        "fieldPlaceHolder":"Max word 120",
-        "fieldVisible":true,
-        "fieldValue":"",
-        "fieldRows": 2,
-        "fieldCols":2
-    },
-    {
-        "fieldLabel":"Country",
-        "fieldType" : "select",
-        "fieldName" : "country",
-        "fieldClassName":"form-control",
-        "fieldID":"country",
-        "fieldPlaceHolder":"Max word 120",
-        "fieldVisible":true,
-        "fieldOption" : [
-            "Please Select Your country",
-            "India",
-            "China",
-            "Saudi",
-            "Singapore"
-        ]
-    },
+        "fieldInputClassName": "form-check-input",
+        "checkboxLabel": "Male",
+        "checkboxValue": "male"
+      },
       {
-        "fieldLabel":"",
-        "fieldType" : "submit",
-        "fieldName" : "Register",
-        "fieldClassName":"btn btn-primary mt-3",
-        "fieldID":"",
-        "fieldPlaceholder":"",
-        "fieldVisible":true,
-         "fieldValue":""
-    }
+        "fieldInputClassName": "form-check-input",
+        "checkboxLabel": "Female",
+        "checkboxValue": "female"
+      }
+    ]
+  },
+  {
+    "fieldLabel": "Address",
+    "fieldType": "textarea",
+    "fieldName": "address",
+    "fieldClassName": "form-control",
+    "fieldID": "address",
+    "fieldPlaceHolder": "Max word 120",
+    "fieldVisible": true,
+    "fieldValue": "",
+    "fieldRows": 2,
+    "fieldCols": 2
+  },
+  
+    
+       {
+        "fieldLabel": "City",
+        "fieldType": "text",
+        "fieldName": "info.city",
+        "fieldClassName": "form-control",
+        "fieldID": "city",
+        "fieldPlaceHolder": "Enter city",
+        "fieldVisible": true,
+        "FieldId": "txtCity"
+      },
+      {
+        "fieldLabel": "Zip",
+        "fieldType": "text",
+        "fieldName": "info.zip",
+        "fieldClassName": "form-control",
+        "fieldID": "zip",
+        "fieldPlaceHolder": "Enter Zip",
+        "fieldVisible": true,
+        "FieldId": "txtZip"
+      } ,
+  {
+    "fieldLabel": "Country",
+    "fieldType": "select",
+    "fieldName": "country",
+    "fieldClassName": "form-control",
+    "fieldID": "country",
+    "fieldPlaceHolder": "Max word 120",
+    "fieldVisible": true,
+    "fieldOption": [
+      "Please Select Your country",
+      "India",
+      "China",
+      "Saudi",
+      "Singapore"
+    ]
+  },
+  {
+    "fieldLabel": "",
+    "fieldType": "submit",
+    "fieldName": "Register",
+    "fieldClassName": "btn btn-primary mt-3",
+    "fieldID": "",
+    "fieldPlaceholder": "",
+    "fieldVisible": true,
+    "fieldValue": ""
+  }
 ]
