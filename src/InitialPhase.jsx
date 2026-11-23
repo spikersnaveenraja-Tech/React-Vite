@@ -19,6 +19,10 @@ export default function InitialPhase(){
             <span className="h5 text-primary text-uppercase">Count :</span>
             <span> {count} </span>
           </div>
+          <div>
+                    <button onClick={()=>setCount(count+1)}> Addition </button>
+                    <button  onClick={()=>setCount(count-1)}> Subraction </button>
+               </div>
         </>
     )
 }

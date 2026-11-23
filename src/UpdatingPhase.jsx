@@ -14,7 +14,7 @@ export default function UpdatingPhase(){
             setTax(3.1)
         if(price >= 500)
             setTax(5.1)
-        },5000)
+        },2000)
        
     },[price])
 

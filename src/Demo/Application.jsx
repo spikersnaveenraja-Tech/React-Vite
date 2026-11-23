@@ -10,7 +10,7 @@ export default function Application() {
         className="btn btn-dark"
         onClick={() => setShow(!show)}
       >
-        Toggle Component
+       {show ? 'Hide Component' : 'Show Component' }
       </button>
 
       {show && <Product />}
