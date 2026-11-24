@@ -12,16 +12,18 @@ export const getEndpoint = (pathName) => {
 
         var endPointurl = `${BASEURL}/${URL[path[0]]}/${path[1]}`
 
-    debugger
     return endPointurl
 }
 
-export const getOption = (method, body = {}) => {
+export const getOption = (method, body = {},controller) => {
 
     OPTIONS.method = method
 
     if (method === "post" || method === "put" || method === "patch" && body != {})
         OPTIONS.body = JSON.stringify(body)
+
+    if(controller != undefined)
+        OPTIONS.signal = controller.signal
 
     return OPTIONS
 }

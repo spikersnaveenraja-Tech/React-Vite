@@ -2,11 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
-import UpdatePhase from './pages/UpdatePhase.jsx'
+import Application from './pages/Application.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
-  <UpdatePhase />
+  <Application />
   // </StrictMode>,
 )
