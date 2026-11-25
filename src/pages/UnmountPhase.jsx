@@ -21,7 +21,7 @@ export default function UnmountPhase() {
                   console.log("Cleanup Called");
                 controller.abort()
             })
-    }, [])
+    }, [currentProductId])
 
     return (
         <>

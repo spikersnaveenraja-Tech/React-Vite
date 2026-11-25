@@ -21,7 +21,7 @@ export default function Product() {
                   console.log("Cleanup Called");
                 controller.abort()
             })
-    }, [])
+    }, [currentProductId])
 
     return (
         <>
